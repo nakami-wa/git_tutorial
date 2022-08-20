@@ -1,0 +1,651 @@
+Last login: Sat Aug 13 21:30:53 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+nakajimamiwa:~ nakajimamiwa$ git version
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+nakajimamiwa:~ nakajimamiwa$ brew install git
+-bash: brew: command not found
+nakajimamiwa:~ nakajimamiwa$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+==> The following existing directories will have their owner set to nakajimamiwa:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/sbin
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Frameworks
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1
+==> /usr/bin/sudo /usr/sbin/chown nakajimamiwa /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown nakajimamiwa /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R nakajimamiwa:admin /usr/local/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/nakajimamiwa/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/nakajimamiwa/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R nakajimamiwa /Users/nakajimamiwa/Library/Caches/Homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Installing Command Line Tools for Xcode-13.4
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-13.4
+Software Update Tool
+
+Finding available software
+
+Downloading Command Line Tools for Xcode    
+
+Downloaded Command Line Tools for Xcode
+Installing Command Line Tools for Xcode
+
+Done with Command Line Tools for Xcode
+Done.
+==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 214231, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (45/45), done.
+Receiving objects:   3% (6427/214231), 3.64 MiB | 7.28 MiReceiving objects:   4% (8570/214231), 3.64 MiB | 7.28 MiReceiving objects:   5% (10712/214231), 3.64 MiB | 7.28 MReceiving objects:   5% (12668/214231), 7.11 MiB | 7.10 MReceiving objects:   6% (12854/214231), 7.11 MiB | 7.10 MReceiving objects:   7% (14997/214231), 7.11 MiB | 7.10 MReceiving objects:   8% (17139/214231), 7.11 MiB | 7.10 MReceiving objects:   9% (19281/214231), 7.11 MiB | 7.10 MReceiving objects:  10% (21424/214231), 10.54 MiB | 7.02 Receiving objects:  11% (23566/214231), 10.54 MiB | 7.02 Receiving objects:  12% (25708/214231), 10.54 MiB | 7.02 Receiving objects:  13% (27851/214231), 10.54 MiB | 7.02 Receiving objects:  14% (29993/214231), 10.54 MiB | 7.02 Receiving objects:  15% (32135/214231), 10.54 MiB | 7.02 Receiving objects:  15% (34192/214231), 10.54 MiB | 7.02 Receiving objects:  16% (34277/214231), 14.09 MiB | 7.04 Receiving objects:  17% (36420/214231), 14.09 MiB | 7.04 Receiving objects:  18% (38562/214231), 14.09 MiB | 7.04 Receiving objects:  19% (40704/214231), 17.43 MiB | 6.96 Receiving objects:  20% (42847/214231), 17.43 MiB | 6.96 Receiving objects:  21% (44989/214231), 17.43 MiB | 6.96 Receiving objects:  21% (46649/214231), 17.43 MiB | 6.96 Receiving objects:  22% (47131/214231), 21.38 MiB | 7.11 Receiving objects:  23% (49274/214231), 21.38 MiB | 7.11 Receiving objects:  24% (51416/214231), 21.38 MiB | 7.11 Receiving objects:  25% (53558/214231), 24.74 MiB | 7.05 Receiving objects:  26% (55701/214231), 24.74 MiB | 7.05 Receiving objects:  27% (57843/214231), 24.74 MiB | 7.05 Receiving objects:  28% (59985/214231), 24.74 MiB | 7.05 Receiving objects:  28% (61713/214231), 24.74 MiB | 7.05 Receiving objects:  29% (62127/214231), 28.04 MiB | 6.99 Receiving objects:  30% (64270/214231), 28.04 MiB | 6.99 Receiving objects:  31% (66412/214231), 28.04 MiB | 6.99 Receiving objects:  32% (68554/214231), 28.04 MiB | 6.99 Receiving objects:  33% (70697/214231), 31.43 MiB | 6.97 Receiving objects:  34% (72839/214231), 31.43 MiB | 6.97 Receiving objects:  35% (74981/214231), 31.43 MiB | 6.97 Receiving objects:  36% (77124/214231), 31.43 MiB | 6.97 Receiving objects:  37% (79266/214231), 31.43 MiB | 6.97 Receiving objects:  38% (81408/214231), 31.43 MiB | 6.97 Receiving objects:  39% (83551/214231), 31.43 MiB | 6.97 Receiving objects:  40% (85693/214231), 31.43 MiB | 6.97 Receiving objects:  41% (87835/214231), 31.43 MiB | 6.97 Receiving objects:  42% (89978/214231), 31.43 MiB | 6.97 Receiving objects:  42% (91093/214231), 31.43 MiB | 6.97 Receiving objects:  43% (92120/214231), 34.93 MiB | 6.93 Receiving objects:  44% (94262/214231), 34.93 MiB | 6.93 Receiving objects:  45% (96404/214231), 34.93 MiB | 6.93 Receiving objects:  46% (98547/214231), 34.93 MiB | 6.93 Receiving objects:  47% (100689/214231), 34.93 MiB | 6.93Receiving objects:  48% (102831/214231), 34.93 MiB | 6.93Receiving objects:  49% (104974/214231), 34.93 MiB | 6.93Receiving objects:  50% (107116/214231), 34.93 MiB | 6.93Receiving objects:  51% (109258/214231), 34.93 MiB | 6.93Receiving objects:  52% (111401/214231), 38.65 MiB | 6.97Receiving objects:  53% (113543/214231), 38.65 MiB | 6.97Receiving objects:  54% (115685/214231), 38.65 MiB | 6.97Receiving objects:  55% (117828/214231), 38.65 MiB | 6.97Receiving objects:  56% (119970/214231), 38.65 MiB | 6.97Receiving objects:  57% (122112/214231), 38.65 MiB | 6.97Receiving objects:  57% (122826/214231), 38.65 MiB | 6.97Receiving objects:  58% (124254/214231), 42.16 MiB | 6.99Receiving objects:  59% (126397/214231), 42.16 MiB | 6.99Receiving objects:  60% (128539/214231), 42.16 MiB | 6.99Receiving objects:  61% (130681/214231), 42.16 MiB | 6.99Receiving objects:  62% (132824/214231), 42.16 MiB | 6.99Receiving objects:  63% (134966/214231), 42.16 MiB | 6.99Receiving objects:  64% (137108/214231), 42.16 MiB | 6.99Receiving objects:  65% (139251/214231), 42.16 MiB | 6.99Receiving objects:  66% (141393/214231), 42.16 MiB | 6.99Receiving objects:  67% (143535/214231), 42.16 MiB | 6.99Receiving objects:  68% (145678/214231), 42.16 MiB | 6.99Receiving objects:  69% (147820/214231), 45.82 MiB | 7.01Receiving objects:  70% (149962/214231), 45.82 MiB | 7.01Receiving objects:  71% (152105/214231), 45.82 MiB | 7.01Receiving objects:  72% (154247/214231), 45.82 MiB | 7.01Receiving objects:  73% (156389/214231), 45.82 MiB | 7.01Receiving objects:  74% (158531/214231), 45.82 MiB | 7.01Receiving objects:  75% (160674/214231), 45.82 MiB | 7.01Receiving objects:  76% (162816/214231), 45.82 MiB | 7.01Receiving objects:  76% (164272/214231), 49.06 MiB | 7.00Receiving objects:  77% (164958/214231), 52.39 MiB | 6.87Receiving objects:  78% (167101/214231), 52.39 MiB | 6.87Receiving objects:  79% (169243/214231), 52.39 MiB | 6.87Receiving objects:  80% (171385/214231), 52.39 MiB | 6.87Receiving objects:  80% (171873/214231), 52.39 MiB | 6.87Receiving objects:  81% (173528/214231), 55.70 MiB | 6.86Receiving objects:  82% (175670/214231), 55.70 MiB | 6.86Receiving objects:  83% (177812/214231), 55.70 MiB | 6.86Receiving objects:  84% (179955/214231), 55.70 MiB | 6.86Receiving objects:  85% (182097/214231), 55.70 MiB | 6.86Receiving objects:  86% (184239/214231), 55.70 MiB | 6.86Receiving objects:  87% (186381/214231), 55.70 MiB | 6.86Receiving objects:  88% (188524/214231), 55.70 MiB | 6.86Receiving objects:  89% (190666/214231), 55.70 MiB | 6.86Receiving objects:  90% (192808/214231), 55.70 MiB | 6.86Receiving objects:  91% (194951/214231), 55.70 MiB | 6.86Receiving objects:  92% (197093/214231), 55.70 MiB | 6.86Receiving objects:  93% (199235/214231), 55.70 MiB | 6.86Receiving objects:  94% (201378/214231), 55.70 MiB | 6.86Receiving objects:  95% (203520/214231), 55.70 MiB | 6.86Receiving objects:  96% (205662/214231), 55.70 MiB | 6.86Receiving objects:  97% (207805/214231), 55.70 MiB | 6.86Receiving objects:  98% (209947/214231), 55.70 MiB | 6.86Receiving objects:  99% (212089/214231), 55.70 MiB | 6.86remote: Total 214231 (delta 0), reused 44 (delta 0), pack-reused 214186
+Receiving objects: 100% (214231/214231), 59.21 MiB | 6.90Receiving objects: 100% (214231/214231), 59.44 MiB | 6.94 MiB/s, done.
+Resolving deltas: 100% (157656/157656), done.
+From https://github.com/Homebrew/brew
+ * [new branch]          master     -> origin/master
+ * [new tag]             0.1        -> 0.1
+ * [new tag]             0.2        -> 0.2
+ * [new tag]             0.3        -> 0.3
+ * [new tag]             0.4        -> 0.4
+ * [new tag]             0.5        -> 0.5
+ * [new tag]             0.6        -> 0.6
+ * [new tag]             0.7        -> 0.7
+ * [new tag]             0.7.1      -> 0.7.1
+ * [new tag]             0.8        -> 0.8
+ * [new tag]             0.8.1      -> 0.8.1
+ * [new tag]             0.9        -> 0.9
+ * [new tag]             0.9.1      -> 0.9.1
+ * [new tag]             0.9.2      -> 0.9.2
+ * [new tag]             0.9.3      -> 0.9.3
+ * [new tag]             0.9.4      -> 0.9.4
+ * [new tag]             0.9.5      -> 0.9.5
+ * [new tag]             0.9.8      -> 0.9.8
+ * [new tag]             0.9.9      -> 0.9.9
+ * [new tag]             1.0.0      -> 1.0.0
+ * [new tag]             1.0.1      -> 1.0.1
+ * [new tag]             1.0.2      -> 1.0.2
+ * [new tag]             1.0.3      -> 1.0.3
+ * [new tag]             1.0.4      -> 1.0.4
+ * [new tag]             1.0.5      -> 1.0.5
+ * [new tag]             1.0.6      -> 1.0.6
+ * [new tag]             1.0.7      -> 1.0.7
+ * [new tag]             1.0.8      -> 1.0.8
+ * [new tag]             1.0.9      -> 1.0.9
+ * [new tag]             1.1.0      -> 1.1.0
+ * [new tag]             1.1.1      -> 1.1.1
+ * [new tag]             1.1.10     -> 1.1.10
+ * [new tag]             1.1.11     -> 1.1.11
+ * [new tag]             1.1.12     -> 1.1.12
+ * [new tag]             1.1.13     -> 1.1.13
+ * [new tag]             1.1.2      -> 1.1.2
+ * [new tag]             1.1.3      -> 1.1.3
+ * [new tag]             1.1.4      -> 1.1.4
+ * [new tag]             1.1.5      -> 1.1.5
+ * [new tag]             1.1.6      -> 1.1.6
+ * [new tag]             1.1.7      -> 1.1.7
+ * [new tag]             1.1.8      -> 1.1.8
+ * [new tag]             1.1.9      -> 1.1.9
+ * [new tag]             1.2.0      -> 1.2.0
+ * [new tag]             1.2.1      -> 1.2.1
+ * [new tag]             1.2.2      -> 1.2.2
+ * [new tag]             1.2.3      -> 1.2.3
+ * [new tag]             1.2.4      -> 1.2.4
+ * [new tag]             1.2.5      -> 1.2.5
+ * [new tag]             1.2.6      -> 1.2.6
+ * [new tag]             1.3.0      -> 1.3.0
+ * [new tag]             1.3.1      -> 1.3.1
+ * [new tag]             1.3.2      -> 1.3.2
+ * [new tag]             1.3.3      -> 1.3.3
+ * [new tag]             1.3.4      -> 1.3.4
+ * [new tag]             1.3.5      -> 1.3.5
+ * [new tag]             1.3.6      -> 1.3.6
+ * [new tag]             1.3.7      -> 1.3.7
+ * [new tag]             1.3.8      -> 1.3.8
+ * [new tag]             1.3.9      -> 1.3.9
+ * [new tag]             1.4.0      -> 1.4.0
+ * [new tag]             1.4.1      -> 1.4.1
+ * [new tag]             1.4.2      -> 1.4.2
+ * [new tag]             1.4.3      -> 1.4.3
+ * [new tag]             1.5.0      -> 1.5.0
+ * [new tag]             1.5.1      -> 1.5.1
+ * [new tag]             1.5.10     -> 1.5.10
+ * [new tag]             1.5.11     -> 1.5.11
+ * [new tag]             1.5.12     -> 1.5.12
+ * [new tag]             1.5.13     -> 1.5.13
+ * [new tag]             1.5.14     -> 1.5.14
+ * [new tag]             1.5.2      -> 1.5.2
+ * [new tag]             1.5.3      -> 1.5.3
+ * [new tag]             1.5.4      -> 1.5.4
+ * [new tag]             1.5.5      -> 1.5.5
+ * [new tag]             1.5.6      -> 1.5.6
+ * [new tag]             1.5.7      -> 1.5.7
+ * [new tag]             1.5.8      -> 1.5.8
+ * [new tag]             1.5.9      -> 1.5.9
+ * [new tag]             1.6.0      -> 1.6.0
+ * [new tag]             1.6.1      -> 1.6.1
+ * [new tag]             1.6.10     -> 1.6.10
+ * [new tag]             1.6.11     -> 1.6.11
+ * [new tag]             1.6.12     -> 1.6.12
+ * [new tag]             1.6.13     -> 1.6.13
+ * [new tag]             1.6.14     -> 1.6.14
+ * [new tag]             1.6.15     -> 1.6.15
+ * [new tag]             1.6.16     -> 1.6.16
+ * [new tag]             1.6.17     -> 1.6.17
+ * [new tag]             1.6.2      -> 1.6.2
+ * [new tag]             1.6.3      -> 1.6.3
+ * [new tag]             1.6.4      -> 1.6.4
+ * [new tag]             1.6.5      -> 1.6.5
+ * [new tag]             1.6.6      -> 1.6.6
+ * [new tag]             1.6.7      -> 1.6.7
+ * [new tag]             1.6.8      -> 1.6.8
+ * [new tag]             1.6.9      -> 1.6.9
+ * [new tag]             1.7.0      -> 1.7.0
+ * [new tag]             1.7.1      -> 1.7.1
+ * [new tag]             1.7.2      -> 1.7.2
+ * [new tag]             1.7.3      -> 1.7.3
+ * [new tag]             1.7.4      -> 1.7.4
+ * [new tag]             1.7.5      -> 1.7.5
+ * [new tag]             1.7.6      -> 1.7.6
+ * [new tag]             1.7.7      -> 1.7.7
+ * [new tag]             1.8.0      -> 1.8.0
+ * [new tag]             1.8.1      -> 1.8.1
+ * [new tag]             1.8.2      -> 1.8.2
+ * [new tag]             1.8.3      -> 1.8.3
+ * [new tag]             1.8.4      -> 1.8.4
+ * [new tag]             1.8.5      -> 1.8.5
+ * [new tag]             1.8.6      -> 1.8.6
+ * [new tag]             1.9.0      -> 1.9.0
+ * [new tag]             1.9.1      -> 1.9.1
+ * [new tag]             1.9.2      -> 1.9.2
+ * [new tag]             1.9.3      -> 1.9.3
+ * [new tag]             2.0.0      -> 2.0.0
+ * [new tag]             2.0.1      -> 2.0.1
+ * [new tag]             2.0.2      -> 2.0.2
+ * [new tag]             2.0.3      -> 2.0.3
+ * [new tag]             2.0.4      -> 2.0.4
+ * [new tag]             2.0.5      -> 2.0.5
+ * [new tag]             2.0.6      -> 2.0.6
+ * [new tag]             2.1.0      -> 2.1.0
+ * [new tag]             2.1.1      -> 2.1.1
+ * [new tag]             2.1.10     -> 2.1.10
+ * [new tag]             2.1.11     -> 2.1.11
+ * [new tag]             2.1.12     -> 2.1.12
+ * [new tag]             2.1.13     -> 2.1.13
+ * [new tag]             2.1.14     -> 2.1.14
+ * [new tag]             2.1.15     -> 2.1.15
+ * [new tag]             2.1.16     -> 2.1.16
+ * [new tag]             2.1.2      -> 2.1.2
+ * [new tag]             2.1.3      -> 2.1.3
+ * [new tag]             2.1.4      -> 2.1.4
+ * [new tag]             2.1.5      -> 2.1.5
+ * [new tag]             2.1.6      -> 2.1.6
+ * [new tag]             2.1.7      -> 2.1.7
+ * [new tag]             2.1.8      -> 2.1.8
+ * [new tag]             2.1.9      -> 2.1.9
+ * [new tag]             2.2.0      -> 2.2.0
+ * [new tag]             2.2.1      -> 2.2.1
+ * [new tag]             2.2.10     -> 2.2.10
+ * [new tag]             2.2.11     -> 2.2.11
+ * [new tag]             2.2.12     -> 2.2.12
+ * [new tag]             2.2.13     -> 2.2.13
+ * [new tag]             2.2.14     -> 2.2.14
+ * [new tag]             2.2.15     -> 2.2.15
+ * [new tag]             2.2.16     -> 2.2.16
+ * [new tag]             2.2.17     -> 2.2.17
+ * [new tag]             2.2.2      -> 2.2.2
+ * [new tag]             2.2.3      -> 2.2.3
+ * [new tag]             2.2.4      -> 2.2.4
+ * [new tag]             2.2.5      -> 2.2.5
+ * [new tag]             2.2.6      -> 2.2.6
+ * [new tag]             2.2.7      -> 2.2.7
+ * [new tag]             2.2.8      -> 2.2.8
+ * [new tag]             2.2.9      -> 2.2.9
+ * [new tag]             2.3.0      -> 2.3.0
+ * [new tag]             2.4.0      -> 2.4.0
+ * [new tag]             2.4.1      -> 2.4.1
+ * [new tag]             2.4.10     -> 2.4.10
+ * [new tag]             2.4.11     -> 2.4.11
+ * [new tag]             2.4.12     -> 2.4.12
+ * [new tag]             2.4.13     -> 2.4.13
+ * [new tag]             2.4.14     -> 2.4.14
+ * [new tag]             2.4.15     -> 2.4.15
+ * [new tag]             2.4.16     -> 2.4.16
+ * [new tag]             2.4.2      -> 2.4.2
+ * [new tag]             2.4.3      -> 2.4.3
+ * [new tag]             2.4.4      -> 2.4.4
+ * [new tag]             2.4.5      -> 2.4.5
+ * [new tag]             2.4.6      -> 2.4.6
+ * [new tag]             2.4.7      -> 2.4.7
+ * [new tag]             2.4.8      -> 2.4.8
+ * [new tag]             2.4.9      -> 2.4.9
+ * [new tag]             2.5.0      -> 2.5.0
+ * [new tag]             2.5.1      -> 2.5.1
+ * [new tag]             2.5.10     -> 2.5.10
+ * [new tag]             2.5.11     -> 2.5.11
+ * [new tag]             2.5.12     -> 2.5.12
+ * [new tag]             2.5.2      -> 2.5.2
+ * [new tag]             2.5.3      -> 2.5.3
+ * [new tag]             2.5.4      -> 2.5.4
+ * [new tag]             2.5.5      -> 2.5.5
+ * [new tag]             2.5.6      -> 2.5.6
+ * [new tag]             2.5.7      -> 2.5.7
+ * [new tag]             2.5.8      -> 2.5.8
+ * [new tag]             2.5.9      -> 2.5.9
+ * [new tag]             2.6.0      -> 2.6.0
+ * [new tag]             2.6.1      -> 2.6.1
+ * [new tag]             2.6.2      -> 2.6.2
+ * [new tag]             2.7.0      -> 2.7.0
+ * [new tag]             2.7.1      -> 2.7.1
+ * [new tag]             2.7.2      -> 2.7.2
+ * [new tag]             2.7.3      -> 2.7.3
+ * [new tag]             2.7.4      -> 2.7.4
+ * [new tag]             2.7.5      -> 2.7.5
+ * [new tag]             2.7.6      -> 2.7.6
+ * [new tag]             2.7.7      -> 2.7.7
+ * [new tag]             3.0.0      -> 3.0.0
+ * [new tag]             3.0.1      -> 3.0.1
+ * [new tag]             3.0.10     -> 3.0.10
+ * [new tag]             3.0.11     -> 3.0.11
+ * [new tag]             3.0.2      -> 3.0.2
+ * [new tag]             3.0.3      -> 3.0.3
+ * [new tag]             3.0.4      -> 3.0.4
+ * [new tag]             3.0.5      -> 3.0.5
+ * [new tag]             3.0.6      -> 3.0.6
+ * [new tag]             3.0.7      -> 3.0.7
+ * [new tag]             3.0.8      -> 3.0.8
+ * [new tag]             3.0.9      -> 3.0.9
+ * [new tag]             3.1.0      -> 3.1.0
+ * [new tag]             3.1.1      -> 3.1.1
+ * [new tag]             3.1.10     -> 3.1.10
+ * [new tag]             3.1.11     -> 3.1.11
+ * [new tag]             3.1.12     -> 3.1.12
+ * [new tag]             3.1.2      -> 3.1.2
+ * [new tag]             3.1.3      -> 3.1.3
+ * [new tag]             3.1.4      -> 3.1.4
+ * [new tag]             3.1.5      -> 3.1.5
+ * [new tag]             3.1.6      -> 3.1.6
+ * [new tag]             3.1.7      -> 3.1.7
+ * [new tag]             3.1.8      -> 3.1.8
+ * [new tag]             3.1.9      -> 3.1.9
+ * [new tag]             3.2.0      -> 3.2.0
+ * [new tag]             3.2.1      -> 3.2.1
+ * [new tag]             3.2.10     -> 3.2.10
+ * [new tag]             3.2.11     -> 3.2.11
+ * [new tag]             3.2.12     -> 3.2.12
+ * [new tag]             3.2.13     -> 3.2.13
+ * [new tag]             3.2.14     -> 3.2.14
+ * [new tag]             3.2.15     -> 3.2.15
+ * [new tag]             3.2.16     -> 3.2.16
+ * [new tag]             3.2.17     -> 3.2.17
+ * [new tag]             3.2.2      -> 3.2.2
+ * [new tag]             3.2.3      -> 3.2.3
+ * [new tag]             3.2.4      -> 3.2.4
+ * [new tag]             3.2.5      -> 3.2.5
+ * [new tag]             3.2.6      -> 3.2.6
+ * [new tag]             3.2.7      -> 3.2.7
+ * [new tag]             3.2.8      -> 3.2.8
+ * [new tag]             3.2.9      -> 3.2.9
+ * [new tag]             3.3.0      -> 3.3.0
+ * [new tag]             3.3.1      -> 3.3.1
+ * [new tag]             3.3.10     -> 3.3.10
+ * [new tag]             3.3.11     -> 3.3.11
+ * [new tag]             3.3.12     -> 3.3.12
+ * [new tag]             3.3.13     -> 3.3.13
+ * [new tag]             3.3.14     -> 3.3.14
+ * [new tag]             3.3.15     -> 3.3.15
+ * [new tag]             3.3.16     -> 3.3.16
+ * [new tag]             3.3.2      -> 3.3.2
+ * [new tag]             3.3.3      -> 3.3.3
+ * [new tag]             3.3.4      -> 3.3.4
+ * [new tag]             3.3.5      -> 3.3.5
+ * [new tag]             3.3.6      -> 3.3.6
+ * [new tag]             3.3.7      -> 3.3.7
+ * [new tag]             3.3.8      -> 3.3.8
+ * [new tag]             3.3.9      -> 3.3.9
+ * [new tag]             3.4.0      -> 3.4.0
+ * [new tag]             3.4.1      -> 3.4.1
+ * [new tag]             3.4.10     -> 3.4.10
+ * [new tag]             3.4.11     -> 3.4.11
+ * [new tag]             3.4.2      -> 3.4.2
+ * [new tag]             3.4.3      -> 3.4.3
+ * [new tag]             3.4.4      -> 3.4.4
+ * [new tag]             3.4.5      -> 3.4.5
+ * [new tag]             3.4.6      -> 3.4.6
+ * [new tag]             3.4.7      -> 3.4.7
+ * [new tag]             3.4.8      -> 3.4.8
+ * [new tag]             3.4.9      -> 3.4.9
+ * [new tag]             3.5.0      -> 3.5.0
+ * [new tag]             3.5.1      -> 3.5.1
+ * [new tag]             3.5.2      -> 3.5.2
+ * [new tag]             3.5.3      -> 3.5.3
+ * [new tag]             3.5.4      -> 3.5.4
+ * [new tag]             3.5.5      -> 3.5.5
+ * [new tag]             3.5.6      -> 3.5.6
+ * [new tag]             3.5.7      -> 3.5.7
+ * [new tag]             3.5.8      -> 3.5.8
+ * [new tag]             3.5.9      -> 3.5.9
+HEAD is now at f1e512001 Merge pull request #13692 from Homebrew/spdx-update
+==> Tapping homebrew/core
+remote: Enumerating objects: 1248065, done.
+remote: Counting objects: 100% (501/501), done.
+remote: Compressing objects: 100% (228/228), done.
+Receiving objects:   0% (8163/1248065), 3.27 MiB | 6.52 MReceiving objects:   1% (12481/1248065), 9.73 MiB | 6.48 Receiving objects:   1% (16283/1248065), 9.73 MiB | 6.48 Receiving objects:   1% (24615/1248065), 16.61 MiB | 6.64Receiving objects:   2% (24962/1248065), 20.35 MiB | 6.78Receiving objects:   2% (31902/1248065), 23.24 MiB | 6.63Receiving objects:   3% (37442/1248065), 29.60 MiB | 6.57Receiving objects:   3% (40199/1248065), 29.60 MiB | 6.57Receiving objects:   3% (48807/1248065), 36.80 MiB | 6.74Receiving objects:   4% (49923/1248065), 40.29 MiB | 6.79Receiving objects:   4% (58077/1248065), 43.86 MiB | 6.79Receiving objects:   5% (62404/1248065), 47.68 MiB | 6.90Receiving objects:   5% (67029/1248065), 51.44 MiB | 6.91Receiving objects:   6% (74884/1248065), 58.55 MiB | 7.13Receiving objects:   6% (75708/1248065), 58.55 MiB | 7.13Receiving objects:   7% (87365/1248065), 65.65 MiB | 7.22Receiving objects:   7% (98275/1248065), 65.65 MiB | 7.22Receiving objects:   8% (99846/1248065), 68.81 MiB | 7.11Receiving objects:   9% (112326/1248065), 68.81 MiB | 7.1Receiving objects:   9% (122737/1248065), 72.21 MiB | 7.0Receiving objects:  10% (124807/1248065), 75.46 MiB | 7.0Receiving objects:  11% (137288/1248065), 78.86 MiB | 6.9Receiving objects:  11% (146061/1248065), 78.86 MiB | 6.9Receiving objects:  12% (149768/1248065), 82.19 MiB | 6.8Receiving objects:  13% (162249/1248065), 85.54 MiB | 6.7Receiving objects:  13% (169476/1248065), 85.54 MiB | 6.7Receiving objects:  14% (174730/1248065), 89.02 MiB | 6.7Receiving objects:  15% (187210/1248065), 92.49 MiB | 6.7Receiving objects:  15% (197357/1248065), 92.49 MiB | 6.7Receiving objects:  16% (199691/1248065), 95.85 MiB | 6.7Receiving objects:  17% (212172/1248065), 95.85 MiB | 6.7Receiving objects:  18% (224652/1248065), 99.43 MiB | 6.7Receiving objects:  18% (231742/1248065), 99.43 MiB | 6.7Receiving objects:  19% (237133/1248065), 103.00 MiB | 6.Receiving objects:  20% (249613/1248065), 106.30 MiB | 6.Receiving objects:  20% (261869/1248065), 106.30 MiB | 6.Receiving objects:  21% (262094/1248065), 106.30 MiB | 6.Receiving objects:  22% (274575/1248065), 109.68 MiB | 6.Receiving objects:  23% (287055/1248065), 112.96 MiB | 6.Receiving objects:  23% (292913/1248065), 112.96 MiB | 6.Receiving objects:  24% (299536/1248065), 116.11 MiB | 6.Receiving objects:  24% (308617/1248065), 119.28 MiB | 6.Receiving objects:  25% (312017/1248065), 122.24 MiB | 6.Receiving objects:  25% (315020/1248065), 125.36 MiB | 6.Receiving objects:  25% (323507/1248065), 131.33 MiB | 6.Receiving objects:  26% (324497/1248065), 134.59 MiB | 6.Receiving objects:  27% (336978/1248065), 138.05 MiB | 6.Receiving objects:  27% (338394/1248065), 138.05 MiB | 6.Receiving objects:  28% (349459/1248065), 141.75 MiB | 6.Receiving objects:  28% (357970/1248065), 145.16 MiB | 6.Receiving objects:  29% (361939/1248065), 148.24 MiB | 6.Receiving objects:  30% (374420/1248065), 151.56 MiB | 6.Receiving objects:  30% (377689/1248065), 151.56 MiB | 6.Receiving objects:  31% (386901/1248065), 158.52 MiB | 6.Receiving objects:  31% (387194/1248065), 158.52 MiB | 6.Receiving objects:  32% (399381/1248065), 165.16 MiB | 6.Receiving objects:  32% (404883/1248065), 165.16 MiB | 6.Receiving objects:  33% (411862/1248065), 168.38 MiB | 6.Receiving objects:  34% (424343/1248065), 171.60 MiB | 6.Receiving objects:  35% (436823/1248065), 174.99 MiB | 6.Receiving objects:  36% (449304/1248065), 178.63 MiB | 6.Receiving objects:  36% (453872/1248065), 178.63 MiB | 6.Receiving objects:  37% (461785/1248065), 182.32 MiB | 6.Receiving objects:  37% (470639/1248065), 186.14 MiB | 6.Receiving objects:  38% (474265/1248065), 189.89 MiB | 6.Receiving objects:  38% (480581/1248065), 193.14 MiB | 6.Receiving objects:  39% (486746/1248065), 196.70 MiB | 6.Receiving objects:  40% (499226/1248065), 200.22 MiB | 7.Receiving objects:  40% (507769/1248065), 200.22 MiB | 7.Receiving objects:  41% (511707/1248065), 203.52 MiB | 7.Receiving objects:  41% (519947/1248065), 206.05 MiB | 6.Receiving objects:  42% (524188/1248065), 209.55 MiB | 6.Receiving objects:  43% (536668/1248065), 212.93 MiB | 6.Receiving objects:  43% (541123/1248065), 212.93 MiB | 6.Receiving objects:  44% (549149/1248065), 216.39 MiB | 6.Receiving objects:  44% (561373/1248065), 219.86 MiB | 6.Receiving objects:  45% (561630/1248065), 219.86 MiB | 6.Receiving objects:  46% (574110/1248065), 223.80 MiB | 6.Receiving objects:  46% (582298/1248065), 227.27 MiB | 6.Receiving objects:  47% (586591/1248065), 230.52 MiB | 6.Receiving objects:  48% (599072/1248065), 234.06 MiB | 6.Receiving objects:  48% (611258/1248065), 234.06 MiB | 6.Receiving objects:  49% (611552/1248065), 234.06 MiB | 6.Receiving objects:  50% (624033/1248065), 237.61 MiB | 6.Receiving objects:  51% (636514/1248065), 241.05 MiB | 6.Receiving objects:  51% (640808/1248065), 241.05 MiB | 6.Receiving objects:  52% (648994/1248065), 244.30 MiB | 6.Receiving objects:  52% (660306/1248065), 247.47 MiB | 6.Receiving objects:  53% (661475/1248065), 247.47 MiB | 6.Receiving objects:  53% (669876/1248065), 253.76 MiB | 6.Receiving objects:  54% (673956/1248065), 256.84 MiB | 6.Receiving objects:  54% (679817/1248065), 260.37 MiB | 6.Receiving objects:  55% (686436/1248065), 263.72 MiB | 6.Receiving objects:  55% (692477/1248065), 267.05 MiB | 6.Receiving objects:  56% (698917/1248065), 273.36 MiB | 6.Receiving objects:  56% (699302/1248065), 273.36 MiB | 6.Receiving objects:  57% (711398/1248065), 280.36 MiB | 6.Receiving objects:  57% (719197/1248065), 280.36 MiB | 6.Receiving objects:  58% (723878/1248065), 283.94 MiB | 6.Receiving objects:  59% (736359/1248065), 287.14 MiB | 6.Receiving objects:  59% (736731/1248065), 287.14 MiB | 6.Receiving objects:  60% (748839/1248065), 293.13 MiB | 6.Receiving objects:  60% (752004/1248065), 293.13 MiB | 6.Receiving objects:  61% (761320/1248065), 296.29 MiB | 6.Receiving objects:  62% (773801/1248065), 299.70 MiB | 6.Receiving objects:  62% (776357/1248065), 299.70 MiB | 6.Receiving objects:  63% (786281/1248065), 303.19 MiB | 6.Receiving objects:  63% (791715/1248065), 306.75 MiB | 6.Receiving objects:  64% (798762/1248065), 310.05 MiB | 6.Receiving objects:  64% (808256/1248065), 313.47 MiB | 6.Receiving objects:  65% (811243/1248065), 313.47 MiB | 6.Receiving objects:  66% (823723/1248065), 317.08 MiB | 6.Receiving objects:  66% (829211/1248065), 320.72 MiB | 6.Receiving objects:  67% (836204/1248065), 323.86 MiB | 6.Receiving objects:  67% (845536/1248065), 327.51 MiB | 6.Receiving objects:  68% (848685/1248065), 327.51 MiB | 6.Receiving objects:  69% (861165/1248065), 334.72 MiB | 6.Receiving objects:  69% (866579/1248065), 334.72 MiB | 6.Receiving objects:  70% (873646/1248065), 341.81 MiB | 7.Receiving objects:  70% (875680/1248065), 341.81 MiB | 7.Receiving objects:  70% (883274/1248065), 347.51 MiB | 6.Receiving objects:  71% (886127/1248065), 350.64 MiB | 6.Receiving objects:  71% (889153/1248065), 353.51 MiB | 6.Receiving objects:  71% (897725/1248065), 359.70 MiB | 6.Receiving objects:  72% (898607/1248065), 362.59 MiB | 6.Receiving objects:  72% (903177/1248065), 365.73 MiB | 6.Receiving objects:  73% (911088/1248065), 372.01 MiB | 6.Receiving objects:  73% (912838/1248065), 372.01 MiB | 6.Receiving objects:  73% (921740/1248065), 378.54 MiB | 6.Receiving objects:  74% (923569/1248065), 381.37 MiB | 6.Receiving objects:  74% (933004/1248065), 384.39 MiB | 6.Receiving objects:  75% (936049/1248065), 384.39 MiB | 6.Receiving objects:  75% (946345/1248065), 390.50 MiB | 6.Receiving objects:  76% (948530/1248065), 390.50 MiB | 6.Receiving objects:  76% (958586/1248065), 396.64 MiB | 6.Receiving objects:  77% (961011/1248065), 396.64 MiB | 6.Receiving objects:  77% (966590/1248065), 402.96 MiB | 6.Receiving objects:  78% (973491/1248065), 405.86 MiB | 6.Receiving objects:  78% (981113/1248065), 409.22 MiB | 6.Receiving objects:  79% (985972/1248065), 412.27 MiB | 6.Receiving objects:  79% (990148/1248065), 415.04 MiB | 6.Receiving objects:  80% (998452/1248065), 415.04 MiB | 6.Receiving objects:  80% (1003385/1248065), 421.21 MiB | 6Receiving objects:  80% (1008454/1248065), 427.37 MiB | 6Receiving objects:  81% (1010933/1248065), 430.32 MiB | 6Receiving objects:  81% (1015362/1248065), 433.27 MiB | 6Receiving objects:  82% (1023414/1248065), 438.46 MiB | 5Receiving objects:  82% (1025315/1248065), 438.46 MiB | 5Receiving objects:  82% (1030883/1248065), 444.62 MiB | 5Receiving objects:  83% (1035894/1248065), 447.88 MiB | 5Receiving objects:  83% (1042309/1248065), 450.55 MiB | 5Receiving objects:  84% (1048375/1248065), 450.55 MiB | 5Receiving objects:  84% (1057710/1248065), 457.14 MiB | 5Receiving objects:  85% (1060856/1248065), 457.14 MiB | 5Receiving objects:  86% (1073336/1248065), 462.90 MiB | 6Receiving objects:  86% (1075615/1248065), 462.90 MiB | 6Receiving objects:  87% (1085817/1248065), 466.04 MiB | 6Receiving objects:  88% (1098298/1248065), 466.04 MiB | 6Receiving objects:  88% (1107439/1248065), 469.38 MiB | 6Receiving objects:  89% (1110778/1248065), 469.38 MiB | 6Receiving objects:  90% (1123259/1248065), 472.46 MiB | 6Receiving objects:  90% (1131233/1248065), 475.75 MiB | 6Receiving objects:  91% (1135740/1248065), 475.75 MiB | 6Receiving objects:  91% (1147704/1248065), 482.71 MiB | 6Receiving objects:  92% (1148220/1248065), 482.71 MiB | 6Receiving objects:  92% (1153269/1248065), 489.68 MiB | 6Receiving objects:  93% (1160701/1248065), 492.96 MiB | 6Receiving objects:  94% (1173182/1248065), 492.96 MiB | 6Receiving objects:  95% (1185662/1248065), 492.96 MiB | 6Receiving objects:  96% (1198143/1248065), 496.53 MiB | 6Receiving objects:  96% (1198192/1248065), 496.53 MiB | 6Receiving objects:  97% (1210624/1248065), 496.53 MiB | 6Receiving objects:  98% (1223104/1248065), 496.53 MiB | 6Receiving objects:  99% (1235585/1248065), 500.21 MiB | 6remote: Total 1248065 (delta 308), reused 460 (delta 273), pack-reused 1247564
+Receiving objects: 100% (1248065/1248065), 500.21 MiB | 6Receiving objects: 100% (1248065/1248065), 502.85 MiB | 6.55 MiB/s, done.
+Resolving deltas: 100% (859115/859115), done.
+From https://github.com/Homebrew/homebrew-core
+ * [new branch]              master     -> origin/master
+Updating files: 100% (6579/6579), done.
+HEAD is now at e91660c5b4a s-lang: update 2.3.3 bottle.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+nakajimamiwa:~ nakajimamiwa$ 
+nakajimamiwa:~ nakajimamiwa$ 
+nakajimamiwa:~ nakajimamiwa$ brew -v
+Homebrew 3.5.9
+Homebrew/homebrew-core (git revision e91660c5b4a; last commit 2022-08-13)
+nakajimamiwa:~ nakajimamiwa$ brew install git
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/
+#=#=#                                                    ######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/
+==> Downloading from https://pkg-containers.githubusercon
+##                                                       #######                                                  ##############                                           #####################                                    ###########################                              ##################################                       ##########################################               ###############################################          ######################################################   ########################################################################################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/ma
+#=#=#                                                    ######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/bl
+==> Downloading from https://pkg-containers.githubusercon
+##                                                       ############################                             ####################################################     ######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/mani
+#=#=#                                                    ################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blob
+==> Downloading from https://pkg-containers.githubusercon
+                                                         ###                                                      #####                                                    ########                                                 ############                                             ###############                                          ####################                                     ########################                                 ############################                             #################################                        #####################################                    ########################################                 ############################################             ################################################         ####################################################     ######################################################## ############################################################################################################################################################################################################################################################################################################ 100.0%
+==> Installing dependencies for git: gettext and pcre2
+==> Installing git dependency: gettext
+==> Pouring gettext--0.21.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/0.21: 1,953 files, 20.2MB
+==> Installing git dependency: pcre2
+==> Pouring pcre2--10.40.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre2/10.40: 230 files, 6.4MB
+==> Installing git
+==> Pouring git--2.37.2.monterey.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/git/2.37.2: 1,561 files, 44.6MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+nakajimamiwa:~ nakajimamiwa$ git --version
+git version 2.32.1 (Apple Git-133)
+nakajimamiwa:~ nakajimamiwa$ git config --global user.name "nakami-wa"
+nakajimamiwa:~ nakajimamiwa$ git config --global user.email naka.mi.59@gmail.com
+nakajimamiwa:~ nakajimamiwa$ git config --global core.editer "atom --wait"
+nakajimamiwa:~ nakajimamiwa$ git config user.name
+nakami-wa
+nakajimamiwa:~ nakajimamiwa$ git config user.email
+naka.mi.59@gmail.com
+nakajimamiwa:~ nakajimamiwa$ git config core.editer
+atom --wait
+nakajimamiwa:~ nakajimamiwa$ git config --list
+credential.helper=osxkeychain
+core.excludesfile=/Users/nakajimamiwa/.gitignore_global
+core.editer=atom --wait
+difftool.sourcetree.cmd=opendiff "$LOCAL" "$REMOTE"
+difftool.sourcetree.path=
+mergetool.sourcetree.cmd=/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh "$LOCAL" "$REMOTE" -ancestor "$BASE" -merge "$MERGED"
+mergetool.sourcetree.trustexitcode=true
+user.name=nakami-wa
+user.email=naka.mi.59@gmail.com
+commit.template=/Users/nakajimamiwa/.stCommitMsg
+nakajimamiwa:~ nakajimamiwa$ cat ~/.gitconfig
+[core]
+	excludesfile = /Users/nakajimamiwa/.gitignore_global
+	editer = atom --wait
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = nakami-wa
+	email = naka.mi.59@gmail.com
+[commit]
+	template = /Users/nakajimamiwa/.stCommitMsg
+nakajimamiwa:~ nakajimamiwa$ brew install tree
+Running `brew update --auto-update`...
+==> Homebrew is run entirely by unpaid volunteers. Please
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+
+==> Downloading https://ghcr.io/v2/homebrew/core/tree/man
+#=#=#                                                    ######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tree/blo
+==> Downloading from https://pkg-containers.githubusercon
+######################################################################## 100.0%
+==> Pouring tree--2.0.2.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/tree/2.0.2: 8 files, 151KB
+==> Running `brew cleanup tree`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+nakajimamiwa:~ nakajimamiwa$ cd ~/GitHub/udemy_code
+nakajimamiwa:udemy_code nakajimamiwa$ mkdir git_tutorial
+nakajimamiwa:udemy_code nakajimamiwa$ cd git_tutorial
+nakajimamiwa:git_tutorial nakajimamiwa$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/nakajimamiwa/GitHub/udemy_code/git_tutorial/.git/
+nakajimamiwa:git_tutorial nakajimamiwa$ ls -a
+.	..	.git
+nakajimamiwa:git_tutorial nakajimamiwa$ ls .git/
+HEAD		hooks		refs
+config		info
+description	objects
+nakajimamiwa:git_tutorial nakajimamiwa$ cd ../
+nakajimamiwa:udemy_code nakajimamiwa$ git clone https://github.com/atom/atom.git
+Cloning into 'atom'...
+remote: Enumerating objects: 203961, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (5/5), done.
+Receiving objects:   3% (6119/203961), 2.25 MiB | 4.44 MiReceiving objects:   4% (8159/203961), 2.25 MiB | 4.44 MiReceiving objects:   5% (10199/203961), 2.25 MiB | 4.44 MReceiving objects:   6% (12238/203961), 2.25 MiB | 4.44 MReceiving objects:   7% (14278/203961), 2.25 MiB | 4.44 MReceiving objects:   8% (16317/203961), 2.25 MiB | 4.44 MReceiving objects:   8% (17690/203961), 2.25 MiB | 4.44 MReceiving objects:   9% (18357/203961), 5.33 MiB | 5.29 MReceiving objects:  10% (20397/203961), 5.33 MiB | 5.29 MReceiving objects:  11% (22436/203961), 5.33 MiB | 5.29 MReceiving objects:  12% (24476/203961), 5.33 MiB | 5.29 MReceiving objects:  13% (26515/203961), 5.33 MiB | 5.29 MReceiving objects:  14% (28555/203961), 5.33 MiB | 5.29 MReceiving objects:  15% (30595/203961), 5.33 MiB | 5.29 MReceiving objects:  16% (32634/203961), 5.33 MiB | 5.29 MReceiving objects:  17% (34674/203961), 5.33 MiB | 5.29 MReceiving objects:  18% (36713/203961), 5.33 MiB | 5.29 MReceiving objects:  19% (38753/203961), 9.20 MiB | 6.10 MReceiving objects:  20% (40793/203961), 9.20 MiB | 6.10 MReceiving objects:  20% (40811/203961), 12.64 MiB | 6.27 Receiving objects:  20% (41186/203961), 19.33 MiB | 6.41 Receiving objects:  20% (42437/203961), 26.50 MiB | 6.60 Receiving objects:  21% (42832/203961), 26.50 MiB | 6.60 Receiving objects:  21% (44679/203961), 29.92 MiB | 6.63 Receiving objects:  22% (44872/203961), 33.75 MiB | 6.99 Receiving objects:  22% (46911/203961), 40.70 MiB | 6.99 Receiving objects:  23% (46912/203961), 40.70 MiB | 6.99 Receiving objects:  24% (48951/203961), 44.04 MiB | 6.98 Receiving objects:  24% (49761/203961), 44.04 MiB | 6.98 Receiving objects:  25% (50991/203961), 47.71 MiB | 7.09 Receiving objects:  26% (53030/203961), 47.71 MiB | 7.09 Receiving objects:  26% (54024/203961), 50.54 MiB | 6.94 Receiving objects:  26% (54197/203961), 59.56 MiB | 6.58 Receiving objects:  26% (54197/203961), 65.96 MiB | 6.37 Receiving objects:  26% (54197/203961), 72.67 MiB | 6.33 Receiving objects:  26% (54200/203961), 79.56 MiB | 6.41 Receiving objects:  26% (54200/203961), 85.91 MiB | 6.50 Receiving objects:  26% (54200/203961), 92.48 MiB | 6.64 Receiving objects:  26% (54200/203961), 99.16 MiB | 6.60 Receiving objects:  26% (54205/203961), 102.39 MiB | 6.60Receiving objects:  27% (55070/203961), 105.82 MiB | 6.55Receiving objects:  28% (57110/203961), 109.16 MiB | 6.57Receiving objects:  28% (57586/203961), 112.22 MiB | 6.54Receiving objects:  29% (59149/203961), 115.32 MiB | 6.50Receiving objects:  30% (61189/203961), 115.32 MiB | 6.50Receiving objects:  30% (61510/203961), 115.32 MiB | 6.50Receiving objects:  31% (63228/203961), 118.89 MiB | 6.57Receiving objects:  32% (65268/203961), 121.74 MiB | 6.47Receiving objects:  32% (66919/203961), 121.74 MiB | 6.47Receiving objects:  33% (67308/203961), 121.74 MiB | 6.47Receiving objects:  34% (69347/203961), 125.31 MiB | 6.51Receiving objects:  35% (71387/203961), 125.31 MiB | 6.51Receiving objects:  36% (73426/203961), 128.89 MiB | 6.56Receiving objects:  37% (75466/203961), 128.89 MiB | 6.56Receiving objects:  38% (77506/203961), 128.89 MiB | 6.56Receiving objects:  39% (79545/203961), 128.89 MiB | 6.56Receiving objects:  39% (81257/203961), 128.89 MiB | 6.56Receiving objects:  40% (81585/203961), 128.89 MiB | 6.56Receiving objects:  41% (83625/203961), 128.89 MiB | 6.56Receiving objects:  42% (85664/203961), 132.57 MiB | 6.67Receiving objects:  43% (87704/203961), 132.57 MiB | 6.67Receiving objects:  44% (89743/203961), 132.57 MiB | 6.67Receiving objects:  45% (91783/203961), 132.57 MiB | 6.67Receiving objects:  46% (93823/203961), 132.57 MiB | 6.67Receiving objects:  47% (95862/203961), 132.57 MiB | 6.67Receiving objects:  48% (97902/203961), 132.57 MiB | 6.67Receiving objects:  49% (99941/203961), 132.57 MiB | 6.67Receiving objects:  50% (101981/203961), 135.65 MiB | 6.5Receiving objects:  51% (104021/203961), 135.65 MiB | 6.5Receiving objects:  52% (106060/203961), 135.65 MiB | 6.5Receiving objects:  52% (107456/203961), 135.65 MiB | 6.5Receiving objects:  53% (108100/203961), 135.65 MiB | 6.5Receiving objects:  54% (110139/203961), 135.65 MiB | 6.5Receiving objects:  55% (112179/203961), 139.33 MiB | 6.6Receiving objects:  56% (114219/203961), 139.33 MiB | 6.6Receiving objects:  57% (116258/203961), 139.33 MiB | 6.6Receiving objects:  58% (118298/203961), 139.33 MiB | 6.6Receiving objects:  59% (120337/203961), 142.64 MiB | 6.7Receiving objects:  60% (122377/203961), 142.64 MiB | 6.7Receiving objects:  61% (124417/203961), 142.64 MiB | 6.7Receiving objects:  62% (126456/203961), 142.64 MiB | 6.7Receiving objects:  62% (127725/203961), 142.64 MiB | 6.7Receiving objects:  63% (128496/203961), 142.64 MiB | 6.7Receiving objects:  64% (130536/203961), 146.11 MiB | 6.8Receiving objects:  65% (132575/203961), 146.11 MiB | 6.8Receiving objects:  66% (134615/203961), 146.11 MiB | 6.8Receiving objects:  67% (136654/203961), 146.11 MiB | 6.8Receiving objects:  68% (138694/203961), 146.11 MiB | 6.8Receiving objects:  69% (140734/203961), 149.69 MiB | 6.8Receiving objects:  70% (142773/203961), 149.69 MiB | 6.8Receiving objects:  71% (144813/203961), 149.69 MiB | 6.8Receiving objects:  72% (146852/203961), 149.69 MiB | 6.8Receiving objects:  73% (148892/203961), 149.69 MiB | 6.8Receiving objects:  74% (150932/203961), 149.69 MiB | 6.8Receiving objects:  75% (152971/203961), 149.69 MiB | 6.8Receiving objects:  76% (155011/203961), 149.69 MiB | 6.8Receiving objects:  76% (155680/203961), 149.69 MiB | 6.8Receiving objects:  77% (157050/203961), 149.69 MiB | 6.8Receiving objects:  78% (159090/203961), 149.69 MiB | 6.8Receiving objects:  78% (160106/203961), 159.75 MiB | 6.8Receiving objects:  78% (160106/203961), 167.16 MiB | 6.9Receiving objects:  78% (160106/203961), 173.67 MiB | 6.8Receiving objects:  78% (160107/203961), 179.87 MiB | 6.6Receiving objects:  79% (161130/203961), 183.02 MiB | 6.6Receiving objects:  79% (163088/203961), 183.02 MiB | 6.6Receiving objects:  80% (163169/203961), 183.02 MiB | 6.6Receiving objects:  81% (165209/203961), 186.32 MiB | 6.6Receiving objects:  82% (167249/203961), 190.00 MiB | 6.6Receiving objects:  83% (169288/203961), 190.00 MiB | 6.6Receiving objects:  84% (171328/203961), 190.00 MiB | 6.6Receiving objects:  85% (173367/203961), 190.00 MiB | 6.6Receiving objects:  85% (175141/203961), 190.00 MiB | 6.6Receiving objects:  86% (175407/203961), 190.00 MiB | 6.6Receiving objects:  87% (177447/203961), 190.00 MiB | 6.6Receiving objects:  87% (177514/203961), 199.99 MiB | 6.5Receiving objects:  87% (177514/203961), 206.19 MiB | 6.5Receiving objects:  87% (177514/203961), 212.64 MiB | 6.5Receiving objects:  87% (177696/203961), 218.79 MiB | 6.3Receiving objects:  87% (177696/203961), 225.24 MiB | 6.2Receiving objects:  87% (177697/203961), 228.30 MiB | 6.2Receiving objects:  87% (178637/203961), 235.14 MiB | 6.3Receiving objects:  88% (179486/203961), 238.58 MiB | 6.4Receiving objects:  88% (179840/203961), 244.54 MiB | 6.3Receiving objects:  88% (179840/203961), 250.81 MiB | 6.3Receiving objects:  88% (179841/203961), 257.81 MiB | 6.5Receiving objects:  89% (181526/203961), 257.81 MiB | 6.5Receiving objects:  90% (183565/203961), 261.39 MiB | 6.5Receiving objects:  91% (185605/203961), 261.39 MiB | 6.5Receiving objects:  91% (187000/203961), 265.02 MiB | 6.6Receiving objects:  91% (187001/203961), 268.27 MiB | 6.5Receiving objects:  92% (187645/203961), 268.27 MiB | 6.5Receiving objects:  93% (189684/203961), 268.27 MiB | 6.5Receiving objects:  94% (191724/203961), 271.43 MiB | 6.5Receiving objects:  94% (193173/203961), 276.52 MiB | 6.3Receiving objects:  94% (193173/203961), 281.58 MiB | 5.9Receiving objects:  95% (193763/203961), 281.58 MiB | 5.9Receiving objects:  96% (195803/203961), 281.58 MiB | 5.9Receiving objects:  97% (197843/203961), 281.58 MiB | 5.9Receiving objects:  98% (199882/203961), 281.58 MiB | 5.9Receiving objects:  98% (201575/203961), 284.68 MiB | 5.9Receiving objects:  99% (201922/203961), 284.68 MiB | 5.9Receiving objects:  99% (202965/203961), 293.05 MiB | 5.4Receiving objects:  99% (202965/203961), 298.98 MiB | 5.5Receiving objects:  99% (202965/203961), 304.88 MiB | 5.6Receiving objects:  99% (203886/203961), 308.49 MiB | 5.8Receiving objects:  99% (203886/203961), 317.43 MiB | 5.9Receiving objects:  99% (203887/203961), 320.11 MiB | 5.8remote: Total 203961 (delta 10), reused 10 (delta 10), pack-reused 203946
+Receiving objects: 100% (203961/203961), 320.11 MiB | 5.8Receiving objects: 100% (203961/203961), 322.07 MiB | 6.41 MiB/s, done.
+Resolving deltas: 100% (144751/144751), done.
+nakajimamiwa:udemy_code nakajimamiwa$ cd atom/
+nakajimamiwa:atom nakajimamiwa$ ls -a
+.
+..
+.coffeelintignore
+.eslintignore
+.eslintrc.json
+.git
+.gitattributes
+.github
+.gitignore
+.prettierrc
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+Dockerfile
+LICENSE.md
+PULL_REQUEST_TEMPLATE.md
+README.md
+SUPPORT.md
+apm
+atom.sh
+benchmarks
+coffeelint.json
+docs
+dot-atom
+exports
+keymaps
+menus
+package-lock.json
+package.json
+packages
+resources
+script
+spec
+src
+static
+stylelint.config.js
+vendor
+nakajimamiwa:atom nakajimamiwa$ cd ../
+nakajimamiwa:udemy_code nakajimamiwa$ cd git_tutorial/
+nakajimamiwa:git_tutorial nakajimamiwa$ ls
+index.html
+nakajimamiwa:git_tutorial nakajimamiwa$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+nakajimamiwa:git_tutorial nakajimamiwa$ git add .
+nakajimamiwa:git_tutorial nakajimamiwa$ git commit
+hint: Waiting for your editor to close the file... 
+initial commit
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#       new file:   index.html
+#
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+~                                                        
+-- INSERT --
